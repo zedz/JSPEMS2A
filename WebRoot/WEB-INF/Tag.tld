@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+  <description>JSTL Customized library</description>
+  <display-name>JSTL Customized</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>c</short-name>
+  <uri>/tag</uri>
+  
+<tag>
+    <name>date</name>
+    <tag-class>tag.DateTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+        <name>pattern</name>
+        <!-- 当为true时，表示该值必须赋值 -->
+        <required>true</required>
+        <!-- 当为true时，表示可以动态赋值（使用EL表达式） -->
+        <rtexprvalue>false</rtexprvalue>
+    </attribute>
+
+</tag>
+
+</taglib>
